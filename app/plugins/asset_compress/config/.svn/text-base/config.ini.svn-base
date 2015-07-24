@@ -1,0 +1,129 @@
+;; General settings control basic behavior of the plugin
+;;
+;; * writeCache - set to true to enable file caching, each extension
+;;   will also need a cachePath
+;;
+;; * cacheConfig - set to true to cache the parsed configuration data
+;;   so it doesn't get parsed on each request.
+;;
+;; * timestampFile - Set to true to use a timestampfile.  Using a
+;;   timestamp file means that each file will share a timestamp.
+;;   Additionally the helper will not glob the filesystem to find
+;;   combined assets.  When using timestampFile, you should also enable
+;;   the `timestamp` flag for each file extension.
+;;
+;[General]
+;timestampFile = false
+;writeCache = true
+;cacheConfig = false
+;
+;; Define an extension type.
+;;
+;; _filters, _targets and other keys prefixed with this value
+;; are connected when the ini file is parsed.
+;;
+;; * cachePath - is where built files will be output
+;; * timestamp - Set to true to add a timestamp to build files.
+;; * paths - An array of paths where files used in builds can be found
+;;   Supports glob expressions.
+;; * filters - A list of filters to be applied to all build files
+;;   using this extension.
+;; * baseUrl - Set the base url this type of asset is served off of, good
+;;   for using with CDN's
+;[js]
+;baseUrl = http://cdn.example.com
+;timestamp = true
+;paths[] = WEBROOT/js/*
+;cachePath = WEBROOT/cache_js
+;filters[] = Sprockets
+;filters[] = YuiJs
+;filters[] = JsMin
+; 
+;    and
+; 
+;filters[] = CssMin
+;
+;; each target should have a section defining the files
+;; everything after js_* is considered the build file.
+;; all files included in the build are relative to the parent
+;; paths key.
+;;
+;; targets can include their own filters.
+;[js_libs.js]
+;files[] = jquery.js
+;files[] = mootools.js
+;files[] = class.js
+;filters[] = UglifyJs
+;
+;; Create the CSS extension
+;[css]
+;paths[] = WEBROOT/css/*
+;cachePath = WEBROOT/cache_css
+;
+;[css_all.css]
+;files[] = layout.css
+;filters[] = CssMinFilter
+
+; end base
+
+[General]
+cacheConfig = true
+writeCache = true
+
+[css]
+;cachePath = app/tmp/cache/assets
+cachePath = WEBROOT/cache_css/
+paths[] = WEBROOT/css/
+filers [] = cssmin
+timestamp = true
+
+[all.css]
+files[] = cake.generic	
+files[] = commons-main-style.css
+files[] = footer.css
+files[] = views.css	
+files[] = jquery-ui-1.8.16.custom.css.css
+files[] = jquery.qtip.min.css
+files[] = jquery.jscrollpane.css
+
+[js]
+;cachePath = app/tmp/cache/assets
+cachePath = WEBROOT/cache_js/
+paths[] = WEBROOT/js/*
+filters [] = JsMinFilter
+timestamp = true
+
+
+[libs.js]
+files[] = jquery-1.7.1.js
+files[] = jquery-ui-1.8.24.custom.min.js
+files[] = jquery-common.js
+files[] = jquery.lazyload.min.js
+files[] = jquery.scrollstop	.js
+files[] = jquery.jscrollpane.js
+files[] = jquery.mousewheel.js
+files[] = jquery.ui.selectmenu-1.2.1.js
+files[] = jquery.appear-1.1.1.js
+files[] = jquery.cookie.js
+files[] = jquery.qtip.min.js
+files[] = jquery.cycle.all.js
+files[] = jquery.fileDownload.js
+files[] = footer.js
+files[] = footer_plugins.js
+files[] = jquery.history.js
+files[] = jquery.validate.min.js
+files[] = imgscale.jquery.min.js
+files[] = jquery.validate.password.js
+
+[commons.js]	
+files[] = PEvent.js
+files[] = Msgs.js		
+files[] = Session.js
+files[] = Profile.js
+files[] = Umo.js
+files[] = PEvent.js
+files[] = View.js
+files[] = Streamer.js
+files[] = Mainview.js
+files[] = Lightbox.js
+files[] = ajaxJson.js

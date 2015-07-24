@@ -1,0 +1,1 @@
+ <?php echo $this->element('navigation_bottom_2_login'); ?>

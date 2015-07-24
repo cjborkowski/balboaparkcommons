@@ -1,0 +1,268 @@
+/* Item Name : Sticky Footer 
+Author URI : http://codecanyon.net/user/Pixelworkshop
+Item URI : http://codecanyon.net/item/sticky-footer/168476
+Version : 2.0
+
+TABLE OF CONTENTS
+
+1. FOOTER GENERAL STYLING
+2. DROP UP CONTAINERS
+3. COLUMNS GRID
+4. FOOTER TYPOGRAPHY
+5. TRIGGER BUTTON
+6. COLORED ELEMENTS
+
+/*  _____________________________________________________________________________
+
+    1. FOOTER GENERAL STYLING
+    _____________________________________________________________________________  */
+
+.footer-nav {
+	/*position: fixed;
+	background:url("/css/images/footer_bg.png") bottom repeat-x #0C0C0C;
+	bottom: 0px; *
+	height: 35px;
+	font-family:Arial,Helvetica,sans-serif;
+	border-top: 1px solid #000000;
+	padding:0;
+	text-shadow: 1px 1px 1px #000;
+	-moz-box-shadow: 0px 0px 5px #222222;
+	-webkit-box-shadow: 0px 0px 5px #222222;
+	box-shadow: 0px 0px 5px #222222; */
+	background-color: #33444E !important;
+	width: 166px !important;
+}
+.footer_fullwidth {
+	width: 100%;
+	margin:0;
+}
+.footer_fixedwidth {
+		/*margin:0 auto;
+		width: 1024px;
+		left:50%;
+		margin-left:-490px;
+		-moz-border-radius: 4px 4px 0px 0px;
+		-webkit-border-radius: 4px 4px 0px 0px;
+		border-radius: 4px 4px 0px 0px; */
+}
+.footer-nav li {
+	float:left;
+	list-style:none;
+	font-family: proxima-nova, Verdana,Arial,sans-serif;
+	font-size: 11px !important;
+	background: #33444E !important;
+	border: 1px solid #4B5860;
+	font-weight: normal;
+	z-index: 900;
+}
+.footer-nav li:hover,
+.footer-nav li.active {
+	background-color:#121212;
+}
+.footer-nav li:hover a {
+	
+}
+.footer-nav li a {
+	font-family: proxima-nova, Verdana,Arial,sans-serif;
+	font-size:12px;
+	text-decoration: none;
+	padding: 0px 15px 15px 25px !important;
+	line-height: 26px;
+	display:block;
+}
+
+.footer-nav li .dropup {
+/*padding-right:40px;*/
+	background: url("/css/images/arrow.png") no-repeat 127px 11px !important;
+	border: 1px solid #4B5860;	
+	width: 166px !important;
+}
+
+.footer-nav li .footer_dropup {
+	position: absolute;
+	/*padding:15px 0px 0px 0px;*/
+	margin: 0 0 0 0px;
+	left:-9999em;
+	bottom: 42px; /* Equal height of the footer */
+	z-index: 999;
+	
+}
+.footer-nav li:hover .footer_dropup  {
+	left:auto;
+}
+.footer-nav .footer-nav_home a {
+	padding-top:0;
+}
+/*  _____________________________________________________________________________
+
+    2. DROP UP CONTAINERS
+    _____________________________________________________________________________  */
+.footer-nav .drop1column {width: 160px; overflow-y:scroll;}
+#footer_dropup_2 {bottom:0px !important;}
+#footer_dropup_3 {height:260px; overflow-y: auto; overflow-x: hidden;}
+#footer_dropup_3 {width: 166px; bottom: 40px !important; overflow-y: auto; overflow-x: hidden;}
+#nav3, #nav4, #nav5 {margin: 0px !important;}
+#footer_dropup_4{max-height:260px; width: 166px; bottom:59px !important; overflow-y: auto; overflow-x: hidden;}
+#footer_dropup_5{max-height:260px; width: 166px;  bottom:44px !important; overflow-y: auto; overflow-x: hidden;}
+/*#footer_dropup_4-inner, #footer_dropup_5-inner{ overflow-y: hidden; overflow-x: hidden;}*/
+/*#footer_dropup_4-inner.drop1column {width: 176px;}*/
+
+/*tiny scrolbar */
+#scrollbar1 { width: 170px; clear: both; margin: 0px 0 0px; }
+#scrollbar1 .viewport { width: 157px; height: 166px; overflow: hidden; position: relative; }
+#scrollbar1 .overview { list-style: none; position: absolute; left: 0; top: 0; }
+#scrollbar1 .thumb .end,
+#scrollbar1 .thumb { background-color: #000; }
+#scrollbar1 .scrollbar { position: relative; float: right; width: 11px; }
+#scrollbar1 .track { background-color: #474747 !important; height: 100%; width:9px; position: relative; padding: 0 1px; }
+#scrollbar1 .thumb { height: 20px; width: 9px; cursor: pointer; overflow: hidden; position: absolute; top: 0; }
+#scrollbar1 .thumb .end { overflow: hidden; height: 5px; width: 9px; }
+#scrollbar1 .disable{ display: none; }
+.noSelect { user-select: none; -o-user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; }
+
+#scrollbar2 { width: 170px; clear: both; margin: 0px 0 0px; }
+#scrollbar2 .viewport { width: 157px; height: 166px; overflow: hidden; position: relative; }
+#scrollbar2 .overview { list-style: none; position: absolute; left: 0; top: 0; }
+#scrollbar2 .thumb .end,
+#scrollbar2 .thumb { background-color: #000; }
+#scrollbar2 .scrollbar { position: relative; float: right; width: 11px; }
+#scrollbar2 .track { background-color: #474747 !important; height: 100%; width:9px; position: relative; padding: 0 1px; }
+#scrollbar2 .thumb { height: 20px; width: 9px; cursor: pointer; overflow: hidden; position: absolute; top: 0; }
+#scrollbar2 .thumb .end { overflow: hidden; height: 5px; width: 9px; }
+#scrollbar2 .disable{ display: none; }
+
+
+.footer-nav .drop2columns {width: 160px;}
+.footer-nav .drop3columns {width: 240px;}
+.footer-nav .drop4columns {width: 320px;}
+.footer-nav .drop5columns {width: 400px;}
+.footer-nav .drop6columns {width: 480px;}
+.footer-nav .drop7columns {width: 560px;}
+.footer-nav .drop8columns {width: 640px;}
+.footer-nav .drop9columns {width: 720px;}
+.footer-nav .drop10columns {width: 800px;}
+.footer-nav .drop11columns {width: 880px;}
+.footer-nav .drop12columns {width: 960px;}
+
+.clear, .clear_push {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
+.clear_push { /* Use this one to "clear" and add some space */
+	height: 12px;
+}
+
+
+
+/*  _____________________________________________________________________________
+
+    4. FOOTER TYPOGRAPHY
+    _____________________________________________________________________________  */
+
+.footer-nav p {
+	font-size:12px; 
+	line-height:21px; 
+	margin-bottom:18px;
+}
+/* Simple Lists */
+
+span.footer-ui-icon-off { width: 16px; height: 16px; background: url("/css/images/ui-icons_cccccc_256x240.png") no-repeat;
+background-position: -112px -144px; 
+display: inline-block;
+position: absolute;
+top: 1em;
+margin-top: -8px;
+left: 4px;
+}
+.ui-icon-bullet { background-position: -80px -144px; }
+.ui-icon-radio-off { background-position: -96px -144px; }
+.ui-icon-radio-on { background-position: -112px -144px; }
+
+.select-start{
+background: url(/img/commons-bullet.png) 0 0 no-repeat;
+width: 16px;
+height: 16px;
+display: block;
+position: absolute;
+margin-top: 4px;
+margin-left: 4px;
+
+}
+
+.footer-nav ul, .footer-nav ol {
+	list-style:none;
+	padding-left:10px;
+	margin:0 0 33px ;
+	z-index: 900;
+}
+.footer-nav ul li, .footer-nav ol li {
+	font-size:11px;
+	line-height:26px;
+	position:relative;
+	padding:0;
+	margin:0;
+	float:none;
+	text-align:left;
+	width: 166px !important;
+	height: 26px !important;
+	border-bottom: 1px solid #4B5860 !important;
+
+}
+
+.footer-nav li div.footer_dropup a, .footer-nav ul li a, .footer-nav ol li a {
+	padding:0;
+	margin:0;
+	display:inline;
+	line-height:26px;
+}
+
+.footer-nav ul li a{
+padding: 0px 0px 0px 25px !important;
+white-space: normal;    
+}
+
+a.footer-nav_trigger{
+	position: fixed;
+	z-index:2;
+	bottom: 0px; 
+	right: 10px;
+	width:35px;
+	height:35px;
+	background:url("/css/images/footer_button_up.png") right no-repeat #121212;
+	display: block;
+	-moz-border-radius: 4px 4px 0px 0px;
+    -webkit-border-radius: 4px 4px 0px 0px;
+    border-radius: 4px 4px 0px 0px;
+}
+a.trigger_fixed{
+	margin:0 auto;
+	left:50%;
+	margin-left:447px;
+}
+
+a.footer-nav_trigger.trigger_active {
+	background:url("/css/images/footer_button_down.png") right no-repeat #121212;
+}
+
+
+
+/*  _____________________________________________________________________________
+
+    6. COLORED ELEMENTS
+    _____________________________________________________________________________  */
+
+
+
+/* Links within the content */
+
+.footer-nav li div.footer_dropup a {color:#FFF;}
+.footer-nav li div.footer_dropup a:hover {
+color:#00AAEF; 
+text-decoration: underline; 
+background: url(/img/commons-bullet.png) 5 -3 no-repeat;
+
+}

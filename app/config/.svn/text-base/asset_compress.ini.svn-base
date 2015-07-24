@@ -1,0 +1,59 @@
+[General]
+cacheConfig = true
+writeCache = true
+[css]
+;cachePath = app/tmp/cache/assets
+cachePath = WEBROOT/cache_css/
+paths[] = WEBROOT/css/
+filters[] = CssMinFilter
+timestamp = true
+[all.css]
+files[] = cake.generic.css	
+files[] = jquery-ui-1.8.16.custom.css
+files[] = jquery.qtip.min.css
+files[] = jquery.jscrollpane.css
+files[] = footer.css
+files[] = views.css	
+files[] = commons-main-style.css
+filters[] = CssMinFilter
+[js]
+;cachePath = app/tmp/cache/assets
+cachePath = WEBROOT/cache_js/
+paths[] = WEBROOT/js/*
+timestamp = true
+
+[jquery-combined.js]
+files[] = jquery-1.7.1.js
+files[] = jquery-ui-1.8.24.custom.min.js
+;files[] = jquery.lazyload.min.js
+;files[] = jquery.qtip.min.js
+;files[] = jquery.validate.min.js
+;files[] = imgscale.jquery.min.js
+;files[] = footer.js
+;files[] = footer_plugins.js
+
+[libs-min.js]
+files[] = jquery.fileDownload.js
+files[] = jquery.scrollstop.js
+files[] = jquery.jscrollpane.js
+files[] = jquery.mousewheel.js
+files[] = jquery.cookie.js
+files[] = jquery.cycle.all.js
+files[] = jquery.history.js
+filters [] = JsMinFilter
+
+
+[commons.js]	
+files[] = PEvent.js
+files[] = Msgs.js		
+files[] = Session.js
+files[] = Profile.js
+files[] = Umo.js
+files[] = PEvent.js
+files[] = View.js
+files[] = Streamer.js
+files[] = Mainview.js
+files[] = Lightbox.js
+files[] = ajaxJson.js
+filters [] = JsMinFilter
+

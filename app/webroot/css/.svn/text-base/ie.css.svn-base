@@ -1,0 +1,71 @@
+/* ie 6 not supported, only I.E 7-9 
+/* Target and testing for IE 8 in Standards mode */
+/*home page slideshow */
+.slideshow-slide {
+   /* background: transparent;
+    filter: */
+    background: transparent;
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE8 */   
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);   /* IE6 & 7 */      
+    progid:DXImageTransform.Microsoft.AlphaImageLoader(src=/img/slides-background.png,sizingMethod='crop'); 
+  	zoom: 1;
+}
+#new-nav-main-body-lower-seach-container input[type="text"], input[type="text"]{height:16px !important;} 
+#new-nav-main-body-lower-left-selects, #new-nav-main-body-lower-left-selects-sets{float:left !important;} 
+#new-nav-select-2{}
+#new-nav-select-5{}
+
+#tabs-3{
+	width: 730px;
+	float:left;
+	height:117px;
+}
+
+#tabs-1, #tabs-2{
+	width:893px;
+	height:117px;
+	float:left;
+	height:117px;
+}
+
+#new-nav-browse.ui-state-active a{ 
+	background: url('/img/new-nav-BROWSE-ON-OFF.png') no-repeat top right !important;
+	outline: none !important; 
+}
+
+#new-nav-sets.ui-state-active a{
+	background: url('/img/new-nav-SETS-ON-OFF.png') no-repeat top right !important;
+	outline: none !important; 
+}
+
+
+
+#new-nav-sets-body, #new-nav-sets-lower{
+	width:330px;
+	display:inline-block;
+	overflow:hidden;
+}
+
+#new-nav-sets-options{display:block;top:10;}
+#new-nav-user-sets{
+	width:397px;
+	overflow:hidden;
+	position:relative;
+}
+#new-nav-main-sets-options{top:15 !important;}
+#new-nav-results-display-1,#new-nav-results-display-2 {width:150px;display:inline-block;}
+.image-size-buttons{width: 70px;}
+#new-nav-user-sets-wrapper{width:inherit;}
+
+#new-nav-main-body-lower-seach-container{position:relative;}
+
+/*tabs */
+
+#new-nav-main-body-login-left-inputs div.input{
+	float:left;
+	margin-right: 10px !important;
+}
+
+
+/*List view */
+

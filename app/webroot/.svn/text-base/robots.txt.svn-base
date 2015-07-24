@@ -1,0 +1,11 @@
+User-agent: *
+Disallow: /outbound/
+Disallow: /js/
+Disallow: /css/
+Disallow: /files/
+Disallow: /pdf/
+Disallow: /print/
+Disallow: /json/
+Disallow: /cache_css/
+Disallow: /img/
+Disallow: /cache_js/

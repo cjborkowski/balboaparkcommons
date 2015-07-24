@@ -1,0 +1,44 @@
+/* the major DOM stucture left to right */
+#carousel-main{
+}
+
+#carousel-prev{
+float:left;
+}
+
+#carousel-next{
+float:left;
+}
+
+#thumbs{
+   float: left;
+    height: 29px;
+    margin: 10px 0;
+    overflow: hidden;
+    width: 420px;
+}
+
+#thumbs ul li{
+margin-left:16px;
+}
+
+#thumbs img{
+border: 1px solid #2d2d2d;
+width:30px;
+}
+
+#thumbs ul li a{
+border: 1px solid #2d2d2d;
+width: 26px;
+height: 26px;
+display: inline-block;
+}
+
+#thumbs ul li a:hover{
+border: 1px solid #00aeef;
+}
+
+
+
+
+

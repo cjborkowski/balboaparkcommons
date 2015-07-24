@@ -1,0 +1,168 @@
+div.stream-umo, div.stream-umo1
+{
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/* images were titiling */
+#stream-umo1, #stream-umo2
+{
+	background-repeat: no-repeat !important;
+	background-position: center center;
+}
+
+#stream-loader {
+    left: 432px;
+    position: relative;
+    top: 10px;
+}
+div #streamer-holder
+{
+	width:1024px;
+	height:500px;
+	background-image: url("/img/black-bg-50.png");
+	margin: 0 auto;
+	overflow:hidden;
+	border: 1px solid #222222;
+	display: none;
+}
+
+div .stream-header
+{
+	background-image:url('/img/black-bg-50.png');		
+	position:relative;
+	color:#fff;
+	display:none;
+	padding:10px;	
+	font-family: proxima-nova,sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;	
+	
+}
+div .stream-slide-right, div .stream-slide-view, div .stream-slide-left
+{
+	width:1024px;
+	height:500px;
+	background-color:#1A1A1A;
+}
+
+div .stream-slide-right
+{
+	position: relative;
+	margin-left:1024px;
+}
+
+div .stream-slide-view
+{	
+	margin-left:0px;
+	float:left;
+}
+
+div .stream-slide-left
+{
+	position: relative;
+	margin-left:-1024px;
+
+}
+div.stream-toolbar
+{
+	position:relative;	
+	margin: 0 auto;	
+	top: 200px;
+	/* original */
+	/* width: 272px; */
+	width: 500px;
+	text-align:center;
+}
+div.stream-toolbar a
+{
+	text-align:center;
+	background-color: #000;
+	opacity:0.5;
+	display:inline-block;
+	margin:5px;
+	width:58px;
+	height:59px;
+	cursor: pointer;
+	text-indent: -9999px;
+}
+div.stream-toolbar a:hover
+{
+	opacity:1.0;
+	color:#00AEEF;
+}
+
+/* the slideshow controls */
+
+div.stream-toolbar a.stream-Close
+{
+	background: url("/img/slideshow-controls-close.png");
+}
+
+div.stream-toolbar a.stream-Close:hover
+{
+	background: url("/img/slideshow-controls-close.png");
+	opacity:1.0;
+}
+
+div.stream-toolbar a.stream-Back
+{
+	background: url("/img/slideshow-controls-prev.png"); 
+}
+
+div.stream-toolbar a.stream-Back:hover
+{
+	background: url("/img/slideshow-controls-prev.png"); 
+	opacity:1.0;
+
+}
+
+div.stream-toolbar a.stream-Play
+{
+	background: url("/img/slideshow-controls-play.png");
+}
+
+div.stream-toolbar a.stream-Play:hover
+{
+	background: url("/img/slideshow-controls-play.png");
+	opacity:1.0;
+}
+
+/*not in use yet  play nneds to toffle to pause*/
+
+div.stream-toolbar a.stream-Pause
+{
+	background: url("/img/slideshow-controls-pause.png");
+}
+
+div.stream-toolbar a.stream-Pause:hover
+{
+	background: url("/img/slideshow-controls-pause.png");
+	opacity:1.0;
+}
+
+
+div.stream-toolbar a.stream-Next 
+{
+	background: url("/img/slideshow-controls-next.png");
+}
+
+div.stream-toolbar a.stream-Next:hover
+{
+	background: url("/img/slideshow-controls-next.png");
+	opacity:1.0;
+}
+
+div.stream-toolbar a.stream-Info 
+{
+	background: url("/img/slideshow-controls-info.png");
+}
+
+div.stream-toolbar a.stream-Info:hover
+{
+	background: url("/img/slideshow-controls-info.png");
+	opacity:1.0;
+}
+
+div.stream-toolbar.stream-Add a {}

@@ -1,0 +1,11 @@
+notes by cjb for initial checkout
+how I made the dir in the repo
+
+$ svn mkdir -m "creating directory" svn://dev1.bpoc.org/var/svn/repo/commons.bpoc.org/
+$ svn mkdir -m "creating branches" svn://dev1.bpoc.org/var/svn/repo/commons.bpoc.org/branches
+$ svn mkdir -m "creating tags" svn://dev1.bpoc.org/var/svn/repo/commons.bpoc.org/tags
+
+# a typical local checkout. Observe the "." at the end which always means place
+here or in current directory
+$ svn co svn://dev1.bpoc.org/var/svn/repo/commons.bpoc.org/trunk .
+
